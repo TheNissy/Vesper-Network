@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DATA_ROOT="${1:-$HOME/tspectre-localnet}"
+DATA_ROOT="${1:-$HOME/tvesper-localnet}"
 
 stop_node() {
   local name="$1"

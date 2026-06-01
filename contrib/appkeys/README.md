@@ -1,6 +1,6 @@
-# AppKeys Gateway Integration (Monero Wallet RPC)
+# AppKeys Gateway Integration (Vesper Wallet RPC)
 
-This fork adds AppKeys spend authorization directly into `monero-wallet-rpc` for:
+This fork adds AppKeys spend authorization directly into `vesper-wallet-rpc` for:
 - `transfer`
 - `transfer_split`
 - `sweep_all`
@@ -61,9 +61,9 @@ Call JSON-RPC method:
 
 This reloads profiles and sessions from the configured policy file.
 
-## monero-wallet-cli AppKeys controls
+## vesper-wallet-cli AppKeys controls
 
-`monero-wallet-cli` now includes an `appkeys` command with subcommands:
+`vesper-wallet-cli` now includes an `appkeys` command with subcommands:
 
 - `appkeys load_policy <path>`
 - `appkeys save_policy [path]`

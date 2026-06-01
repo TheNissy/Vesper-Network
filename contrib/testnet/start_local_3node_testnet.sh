@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BIN_DIR="${BIN_DIR:-${1:-$HOME/Testnet-Spectre/source/build/release/bin}}"
-DATA_ROOT="${DATA_ROOT:-${2:-$HOME/tspectre-localnet}}"
+BIN_DIR="${BIN_DIR:-${1:-$HOME/Testnet-Vesper-Network/source/build/release/bin}}"
+DATA_ROOT="${DATA_ROOT:-${2:-$HOME/tvesper-localnet}}"
 P2P_BIND_IP="${P2P_BIND_IP:-0.0.0.0}"
 RPC_BIND_IP="${RPC_BIND_IP:-127.0.0.1}"
 LOG_LEVEL="${LOG_LEVEL:-1}"
 ALLOW_UNSYNC_MINING="${ALLOW_UNSYNC_MINING:-1}"
 
-if [[ -x "$BIN_DIR/spectred" ]]; then
-  DAEMON_BIN="$BIN_DIR/spectred"
+if [[ -x "$BIN_DIR/vesperd" ]]; then
+  DAEMON_BIN="$BIN_DIR/vesperd"
 elif [[ -x "$BIN_DIR/monerod" ]]; then
   DAEMON_BIN="$BIN_DIR/monerod"
 else
-  echo "spectred/monerod not found in: $BIN_DIR" >&2
+  echo "vesperd/monerod not found in: $BIN_DIR" >&2
   exit 1
 fi
 

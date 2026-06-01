@@ -3101,7 +3101,7 @@ namespace cryptonote
       return true;
     }
 
-    static const char software[] = "spectre";
+    static const char software[] = "vesper";
 #ifdef BUILD_TAG
     static const char buildtag[] = BOOST_PP_STRINGIZE(BUILD_TAG);
     static const char subdir[] = "cli";

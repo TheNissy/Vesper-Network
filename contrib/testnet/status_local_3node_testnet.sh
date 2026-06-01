@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DATA_ROOT="${1:-$HOME/tspectre-localnet}"
+DATA_ROOT="${1:-$HOME/tvesper-localnet}"
 
 ports=(38181 38191 38201)
 node_names=(node1 node2 node3)

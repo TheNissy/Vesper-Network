@@ -1,18 +1,18 @@
 param(
-  [string]$BinDir = "$HOME\\Testnet-Spectre\\source\\build\\release\\bin",
-  [string]$DataRoot = "$HOME\\tspectre-localnet",
+  [string]$BinDir = "$HOME\\Testnet-Vesper-Network\\source\\build\\release\\bin",
+  [string]$DataRoot = "$HOME\\tvesper-localnet",
   [string]$P2PBindIP = "0.0.0.0",
   [string]$RPCBindIP = "127.0.0.1",
   [int]$LogLevel = 1,
   [switch]$AllowUnsyncMining
 )
 
-$daemonExe = Join-Path $BinDir "spectred.exe"
+$daemonExe = Join-Path $BinDir "vesperd.exe"
 if (-not (Test-Path $daemonExe)) {
   $daemonExe = Join-Path $BinDir "monerod.exe"
 }
 if (-not (Test-Path $daemonExe)) {
-  Write-Error "spectred.exe/monerod.exe not found in $BinDir"
+  Write-Error "vesperd.exe/monerod.exe not found in $BinDir"
   exit 1
 }
 

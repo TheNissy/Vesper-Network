@@ -54,9 +54,9 @@
 #define MONEY_SUPPLY                                    ((uint64_t)(-1))
 #define EMISSION_SPEED_FACTOR_PER_MINUTE                (20)
 #define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)300000000000) // 3 * pow(10, 11)
-#define SPECTRE_INITIAL_BLOCK_REWARD                    ((uint64_t)10000000000000) // 10 tSPX
+#define SPECTRE_INITIAL_BLOCK_REWARD                    ((uint64_t)10000000000000) // 10 VSPR
 #define SPECTRE_HALVING_INTERVAL_BLOCKS                 ((uint64_t)2102400) // 365 days at 15s target
-#define SPECTRE_TAIL_EMISSION_PER_BLOCK                 ((uint64_t)75000000000) // 0.075 tSPX
+#define SPECTRE_TAIL_EMISSION_PER_BLOCK                 ((uint64_t)75000000000) // 0.075 VSPR
 
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 100
 #define CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2    60000 //size of block (bytes) after which reward for block calculated using block size
@@ -168,7 +168,7 @@
 
 #define RPC_IP_FAILS_BEFORE_BLOCK                       3
 
-#define CRYPTONOTE_NAME                         "tspectre"
+#define CRYPTONOTE_NAME                         "vesper"
 #define CRYPTONOTE_BLOCKCHAINDATA_FILENAME      "data.mdb"
 #define CRYPTONOTE_BLOCKCHAINDATA_LOCK_FILENAME "lock.mdb"
 #define P2P_NET_DATA_FILENAME                   "p2pstate.bin"
@@ -237,8 +237,8 @@ namespace config
   uint16_t const RPC_DEFAULT_PORT = 28181;
   uint16_t const ZMQ_RPC_DEFAULT_PORT = 28182;
   boost::uuids::uuid const NETWORK_ID = { {
-      0x53 ,0x50, 0x58, 0x21 , 0x9a, 0x8d , 0x47, 0x64, 0x93, 0x2f, 0x4b, 0xc6, 0x11, 0x3d, 0x72, 0x7f
-    } }; // Bender's nightmare
+      0x56 ,0x53, 0x50, 0x52 , 0x9a, 0x8d , 0x47, 0x64, 0x93, 0x2f, 0x4b, 0xc6, 0x11, 0x3d, 0x72, 0x7f
+    } }; // VSPR network magic
   std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
   uint32_t const GENESIS_NONCE = 770001;
 

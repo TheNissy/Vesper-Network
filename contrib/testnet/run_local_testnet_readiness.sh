@@ -8,15 +8,15 @@ if [[ $# -lt 1 ]]; then
 Usage: run_local_testnet_readiness.sh <testnet_wallet_address> [threads] [bin_dir] [data_root]
 
 Example:
-  bash run_local_testnet_readiness.sh Qkk... 2 ~/Testnet-Spectre/source/build/release/bin ~/tspectre-localnet
+  bash run_local_testnet_readiness.sh Qkk... 2 ~/Testnet-Vesper-Network/source/build/release/bin ~/tvesper-localnet
 USAGE
   exit 1
 fi
 
 MINER_ADDRESS="$1"
 THREADS="${2:-2}"
-BIN_DIR="${3:-$HOME/Testnet-Spectre/source/build/release/bin}"
-DATA_ROOT="${4:-$HOME/tspectre-localnet}"
+BIN_DIR="${3:-$HOME/Testnet-Vesper-Network/source/build/release/bin}"
+DATA_ROOT="${4:-$HOME/tvesper-localnet}"
 RPC_PORT_NODE1="${RPC_PORT_NODE1:-38181}"
 HEALTH_TIMEOUT_SEC="${HEALTH_TIMEOUT_SEC:-90}"
 MINING_TIMEOUT_SEC="${MINING_TIMEOUT_SEC:-120}"

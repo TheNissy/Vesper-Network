@@ -1,6 +1,6 @@
-# Spectre Testnet Operations (3+ Nodes)
+# Vesper Network Testnet Operations (3+ Nodes)
 
-This folder provides a stable local testnet bootstrap for Spectre (tSpectre), with deterministic node peering and miner launch.
+This folder provides a stable local testnet bootstrap for Vesper Network, with deterministic node peering and miner launch.
 
 ## Scope
 
@@ -16,11 +16,11 @@ No protocol redesign is introduced.
 ## Prerequisites
 
 - Build binaries:
-  - `spectred` (fallback `monerod` also supported by scripts)
-  - `spectre-wallet-cli` (or legacy `monero-wallet-cli`)
-  - `spectre-wallet-rpc` (optional)
+  - `vesperd` (fallback `monerod` also supported by scripts)
+  - `vesper-wallet-cli` (or legacy `monero-wallet-cli`)
+  - `vesper-wallet-rpc` (optional)
 - Typical build output path used by scripts:
-  - `$HOME/Testnet-Spectre/source/build/release/bin`
+  - `$HOME/Testnet-Vesper-Network/source/build/release/bin`
 
 ## 1) Start 3 local nodes
 
@@ -81,7 +81,7 @@ bash work/monero/contrib/testnet/start_node_mining.sh <TESTNET_WALLET_ADDRESS> 2
 Open wallet against node1:
 
 ```bash
-./spectre-wallet-cli --testnet --daemon-address 127.0.0.1:38181
+./vesper-wallet-cli --testnet --daemon-address 127.0.0.1:38181
 ```
 
 Create second wallet against node2/node3 and transfer between them to validate propagation.
